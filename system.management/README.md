@@ -211,15 +211,14 @@ PUT /api/accounts/{accountNumber}
 ```http
 POST /api/accounts/{accountNumber}/credit
 POST /api/accounts/{accountNumber}/debit
-GET  /api/accounts/{accountNumber}/transactions
 ```
 
 ### Fixed Deposit APIs
 
 ```http
-POST /api/fds
-GET  /api/fds/{fdNumber}
-GET  /api/fds/customer
+POST /api/fd
+GET  /api/fd/{fdNumber}
+GET  /api/fd/customer
 ```
 
 ## Installation Guide
@@ -233,7 +232,7 @@ git clone https://github.com/your-org/retail-banking-system.git
 ### Configure Database
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/banking_db
+spring.datasource.url=jdbc:postgresql://localhost:5432/banking_db
 spring.datasource.username=root
 spring.datasource.password=root
 spring.jpa.hibernate.ddl-auto=update
@@ -297,7 +296,6 @@ Target Coverage:
 
 - Controller Layer: 90%+
 - Service Layer: 90%+
-- Repository Layer: Covered via Integration Tests
 - Overall Project Coverage: 90%+
 
 ## Logging
@@ -324,18 +322,6 @@ Global Exception Handler manages:
 - UnauthorizedAccessException
 - InsufficientBalanceException
 - ValidationException
-
-## Future Enhancements
-
-- Fund Transfer Between Accounts
-- Net Banking Dashboard
-- Mobile Banking APIs
-- Email Notifications
-- SMS Notifications
-- Account Statement Download
-- Docker Deployment
-- Kubernetes Deployment
-- Cloud Deployment (AWS/Azure)
 
 ## Project Standards
 
