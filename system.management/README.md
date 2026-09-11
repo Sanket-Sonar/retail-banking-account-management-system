@@ -338,7 +338,7 @@ Global Exception Handler manages:
 
 ## Author
 
-**Sanket Soni**
+**Sanket Sonar**
 
 Consultant | Java Spring Boot Developer
 
