@@ -2,7 +2,6 @@ package com.bank.system.management.security;
 
 import com.bank.system.management.service.CustomUserDetailsService;
 import com.bank.system.management.service.JwtService;
-import com.bank.system.management.service.UserDetailsServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

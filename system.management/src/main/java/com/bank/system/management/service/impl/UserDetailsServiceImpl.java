@@ -1,11 +1,10 @@
-package com.bank.system.management.service;
+package com.bank.system.management.service.impl;
 
 import com.bank.system.management.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 public class UserDetailsServiceImpl
